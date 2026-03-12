@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Registration"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Age -->
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Age"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Gender -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+        </RadioGroup>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Clear Button -->
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>
